@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "All",
-      "setup": "",
-      "run": "gradle test",
+      "setup": "mvn compile",
+      "run": "mvn -DTest=StoringRecordsTest test",
       "input": "",
       "output": "",
       "comparison": "included",
