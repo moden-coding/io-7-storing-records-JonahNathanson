@@ -12,9 +12,9 @@ public class StoringRecords {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Filename:");
-        String file = scan.nextLine();
+        String fileName = scan.nextLine();
 
-        ArrayList<Person> records = readRecordsFromFile(file);
+        ArrayList<Person> records = readRecordsFromFile(fileName);
         System.out.println("Persons: " + records.size());
         System.out.println("Persons:");
         for (Person person : records) {
@@ -23,8 +23,35 @@ public class StoringRecords {
         }
     }
 
-    public static ArrayList<Person> readRecordsFromFile(String file) {
+    public static ArrayList<Person> readRecordsFromFile(String fileName) {
         ArrayList<Person> persons = new ArrayList<>();
+
+        File file = new File(fileName);
+
+        try(BufferedReader br = new BufferedReader(new FileReader(file))){
+
+            String line = br.readLine();
+
+            while (line != null){
+
+                String[] split = line.split(",");
+
+                String name = split[0];
+                int age = Integer.valueOf(split[1]);
+
+                persons.add(new Person (name, age));
+
+                line = br.readLine();
+
+            }
+
+        }
+
+        catch(Exception e){
+
+            System.out.println("Error: " + e.getMessage());
+
+        }
 
         // Write here the code for reading from file
         // and printing the read records
