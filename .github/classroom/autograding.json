@@ -9,6 +9,96 @@
       "comparison": "included",
       "timeout": 3,
       "points": null
+    },
+    {
+      "name": "Test Matching",
+      "setup": "mvn compile",
+      "run": "mvn -DTest=StoringRecordsTest#testMatching test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test Radius",
+      "setup": "mvn compile",
+      "run": "mvn -DTest=StoringRecordsTest#testRadius test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": null
+    },
+    {
+      "name": "Test Add and Remove",
+      "setup": "mvn compile",
+      "run": "mvn -DTest=StoringRecordsTest#testAddAndRemovetest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test Searching",
+      "setup": "mvn compile",
+      "run": "mvn -DTest=StoringRecordsTest#testSearching test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test Item Container",
+      "setup": "mvn compile",
+      "run": "mvn -DTest=StoringRecordsTest#testItemContainer test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": null
+    },
+    {
+      "name": "Test Tiles",
+      "setup": "mvn compile",
+      "run": "mvn -DTest=StoringRecordsTest#testTiles test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test Create Script",
+      "setup": "mvn compile",
+      "run": "mvn -DTest=StoringRecordsTest#testCreateScript test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test Loading",
+      "setup": "mvn compile",
+      "run": "mvn -DTest=StoringRecordsTest#testLoading test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test Saving",
+      "setup": "mvn compile",
+      "run": "mvn -DTest=StoringRecordsTest#testSaving test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
     }
   ]
 }
